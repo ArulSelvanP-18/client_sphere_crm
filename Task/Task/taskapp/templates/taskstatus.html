@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Status Form</title>
+</head>
+<body>
+    <h2>Create / Update Task Status</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" maxlength="45" required><br><br>
+
+        <label for="color_code">Color Code:</label><br>
+        <input type="text" id="color_code" name="color_code" maxlength="45"><br><br>
+
+        <label for="is_active">Is Active:</label>
+        <input type="checkbox" id="is_active" name="is_active" checked><br><br>
+
+        <button type="submit">Save</button>
+    </form>
+
+</body>
+</html>
