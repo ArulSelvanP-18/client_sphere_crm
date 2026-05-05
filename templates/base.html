@@ -319,7 +319,7 @@
   <div class="container-fluid px-4">
 
     <!-- Brand -->
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{% url 'dashboard' %}">
       <div class="brand-icon"><i class="bi bi-bank2"></i></div>
       <div class="brand-text">Cape<span>Bank</span></div>
     </a>
@@ -335,7 +335,7 @@
       <ul class="navbar-nav mx-auto gap-1">
         <li class="nav-item">
           <a class="nav-link {% block nav_dashboard %}{% endblock %}"
-             href="/">
+             href="{% url 'dashboard' %}">
             <i class="bi bi-grid-1x2"></i> Dashboard
           </a>
         </li>
@@ -466,7 +466,7 @@
         <div class="col-lg-2 col-md-3 col-6">
           <div class="footer-heading">Navigation</div>
           <ul class="footer-links">
-            <li><a href="/"><i class="bi bi-chevron-right"></i>Dashboard</a></li>
+            <li><a href="{% url 'dashboard' %}"><i class="bi bi-chevron-right"></i>Dashboard</a></li>
             <li><a href="#"><i class="bi bi-chevron-right"></i>Accounts</a></li>
             <li><a href="{% url 'transaction_home' %}"><i class="bi bi-chevron-right"></i>Transactions</a></li>
             <li><a href="/invoices/"><i class="bi bi-chevron-right"></i>Invoices</a></li>
